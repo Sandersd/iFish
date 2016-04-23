@@ -1,59 +1,25 @@
 <template name="main">
-  iFish
-  <form>
-    <fieldset class="form-group">
-      <label for="fishSpecies">Species</label>
-      <input type="text" class="form-control" id="fishSpecies" placeholder="Species">
-    </fieldset>
-    <fieldset class="form-group">
-      <label for="fishSize">Sex</label>
-      <select class="form-control" id="fishSize">
-        <option>Unknown</option>
-        <option>Male</option>
-        <option>Female</option>
-      </select>
-    </fieldset>
-    <fieldset class="form-group">
-      <label for="fishWeight">Weight</label>
-      <input type="number" class="form-control" id="fishWeight" placeholder="Weight">
-    </fieldset>
-    <fieldset class="form-group">
-      <label for="fishSize">Size</label>
-      <select class="form-control" id="fishSize">
-        <option>Small</option>
-        <option>Medium</option>
-        <option>Large</option>
-        <option>Extra Large</option>
-        <option>Huuuuuuge</option>
-      </select>
-    </fieldset>
-    <fieldset class="form-group">
-      <label for="fishNotes">Notes</label>
-      <textarea class="form-control" id="fishNotes" rows="3"></textarea>
-    </fieldset>
-    <fieldset class="form-group">
-      <label for="fishUpload">File upload</label>
-      <input type="file" class="form-control-file" id="fishUpload">
-      <small class="text-muted">If you already took a picture of the fish, you can upload it here.</small>
-    </fieldset>
-    <div class="radio">
-      <label>
-        <input type="radio" name="colorOptions" id="red" value="red" checked>
-        Red
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="colorOptions" id="blue" value="blue">
-        Blue
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="colorOptions" id="orange" value="orange">
-        Orange
-      </label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+  <div class="row">
+    <a href="/profile">
+      <button>Profile</button>
+    </a>
+  </div>
+
+  <div class="row">
+    <a href="/during_trip">
+      <button>Start Trip</button>
+    </a>
+  </div>
+
+  <div class="row">
+    <a href="/view_trips">
+      <button>View Past Trips</button>
+    </a>
+  </div>
+
+  <div class="row">
+    <a href="/sold_fish">
+      <button>I Sold Some Fish!</button>
+    </a>
+  </div>
 </template>
