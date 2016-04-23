@@ -18,3 +18,6 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 twbs:bootstrap
 kadira:flow-router
 kadira:blaze-layout
+okland:camera-ui
+mdg:geolocation
+dburles:google-maps
