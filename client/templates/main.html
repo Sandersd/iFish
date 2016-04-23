@@ -6,6 +6,33 @@
       <input type="text" class="form-control" id="fishSpecies" placeholder="Species">
     </fieldset>
     <fieldset class="form-group">
+      <label for="fishSex">Sex</label>
+      <select class="form-control" id="fishSex">
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="fishLength">Length/Breadth</label>
+      <input type="number" class="form-control" id="fishLength" placeholder="Length">
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="catchLatitude">Latitude</label>
+      <input type="number" class="form-control" id="catchLatitude" placeholder="Latitude">
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="catchLongitude">Longitude</label>
+      <input type="number" class="form-control" id="catchLongitude" placeholder="Longitude">
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="catchDate">Date</label>
+      <input type="number" class="form-control" id="catchDate" placeholder="Date">
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="catchTime">Time</label>
+      <input type="number" class="form-control" id="catchTime" placeholder="Time">
+    </fieldset>
+    <fieldset class="form-group">
       <label for="fishWeight">Weight</label>
       <input type="number" class="form-control" id="fishWeight" placeholder="Weight">
     </fieldset>
@@ -28,24 +55,14 @@
       <input type="file" class="form-control-file" id="fishUpload">
       <small class="text-muted">If you already took a picture of the fish, you can upload it here.</small>
     </fieldset>
-    <div class="radio">
-      <label>
-        <input type="radio" name="colorOptions" id="red" value="red" checked>
-        Red
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="colorOptions" id="blue" value="blue">
-        Blue
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="colorOptions" id="orange" value="orange">
-        Orange
-      </label>
-    </div>
+    <fieldset class="form-group">
+      <label for="colorOptions">Color</label>
+      <select class="form-control" id="colorOptions">
+        <option>Red</option>
+        <option>Blue</option>
+        <option>Orange</option>
+      </select>
+    </fieldset>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </template>
