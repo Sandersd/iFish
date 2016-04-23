@@ -1,7 +1,7 @@
 <template name='list'>
   List test
   <div>
-  	<ul>
+  	<ul class="trip-list">
 	  {{#each fishes}}
 	    {{> fish}}
 	  {{/each}}
@@ -10,14 +10,11 @@
 </template>
 
 <template name="fish">
-  <li class="list-entry">
+    <li class="trip-item">
       <a href="">
-        <img src="http://lorempixum.com/100/100/nature/1" class="list-picture">
+        <img src="http://lorempixum.com/100/100/nature/1" >
       </a>
-      <p>
-      {{number}} : {{sex}} {{species}}
-      Caught on: {{date}} at {{time}}
-      Lat: {{latitude}} Long: {{Longitude}}
-      </p>
-  </li>
+      <span class="trip-title">Trip Title</span>
+      <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+    </li>
 </template>
