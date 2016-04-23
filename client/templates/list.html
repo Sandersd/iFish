@@ -1,10 +1,23 @@
 <template name='list'>
-  List
-  {{#each fishes}}
-    {{> fish}}
-  {{/each}}
+  List test
+  <div>
+  	<ul>
+	  {{#each fishes}}
+	    {{> fish}}
+	  {{/each}}
+  	</ul>
+  </div>
 </template>
 
-<template name='fish'>
-  {{species}}
+<template name="fish">
+  <li class="list-entry">
+      <a href="">
+        <img src="http://lorempixum.com/100/100/nature/1" class="list-picture">
+      </a>
+      <p>
+      {{number}} : {{sex}} {{species}}
+      Caught on: {{date}} at {{time}}
+      Lat: {{latitude}} Long: {{Longitude}}
+      </p>
+  </li>
 </template>

@@ -1,0 +1,14 @@
+.list-entry{
+	width: 100%;
+	height: 100px;
+}
+
+.fish-list{
+	float: left;
+	width: 100px;
+}
+
+.fish-data{
+	float: right;
+	width: 75%;
+}

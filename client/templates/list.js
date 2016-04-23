@@ -4,6 +4,6 @@ Template.list.onCreated(function() {
 
 Template.list.helpers({
   fishes: function(){
-    return Fishes.find();
+    return fishes.find();
   }
 });
