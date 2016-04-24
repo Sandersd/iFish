@@ -1,5 +1,6 @@
 Template.view_trips.onCreated(function() {
   Meteor.subscribe('trips');
+  Meteor.subscribe('hauls');
 });
 
 Template.view_trips.helpers({

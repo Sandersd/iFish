@@ -1,3 +1,19 @@
 <template name="new_haul">
-  {{> quickForm collection="Hauls" id="insertHaulForm" type="insert"}}
+  {{#autoForm collection="Hauls" id="insertHaulForm" type="insert"}}
+    <fieldset>
+      {{> afQuickField name='species'}}
+      {{> afQuickField name='weight'}}
+      {{> afQuickField name='count'}}
+      {{> afQuickField name='location'}}
+      {{> afQuickField name='gear'}}
+      {{> afQuickField name='weather'}}
+      {{> afQuickField name='surfaceTemp'}}
+      {{> afQuickField name='ticketType'}}
+      {{> afQuickField name='ticketNumber'}}
+      {{> afQuickField name='Samples'}}
+      {{> afQuickField name='trip' value=trip}}
+
+    </fieldset>
+    <button type="submit" class="btn btn-primary haulSubmit">Submit</button>
+  {{/autoForm}}
 </template>

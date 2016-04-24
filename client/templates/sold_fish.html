@@ -1,9 +1,11 @@
 <template name="sold_fish">
-  {{#autoForm collection="Trips" id="updateTripForm" type="update" doc=trip}}
-    <fieldset>
-      {{> afQuickField name='title'}}
-      {{> afQuickField name='content' rows=6}}
-    </fieldset>
-    <button type="submit" class="btn btn-primary">Insert</button>
-  {{/autoForm}}
+  {{#each catches}}
+    {{#autoForm collection="Trips" id="updateTripForm" type="update" doc=this}}
+      <fieldset>
+        {{> afQuickField name='sold'}}
+        {{> afQuickField name='price'}}
+      </fieldset>
+      <button type="submit" class="btn btn-primary">Update</button>
+    {{/autoForm}}
+  {{/each}}
 </template>
