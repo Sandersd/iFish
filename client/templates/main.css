@@ -13,7 +13,7 @@
 .backButton{
     position: absolute;
     float: left;
-    font-size: 1em;
+    font-size: 150%;
 }
 
 div.backButton a{
