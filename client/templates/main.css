@@ -1,5 +1,12 @@
+body {
+  color: #fffff;
+}
 .wrapper {
     text-align: center;
+}
+
+.catches {
+  color: white;
 }
 
 .title{

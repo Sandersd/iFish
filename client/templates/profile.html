@@ -2,5 +2,14 @@
   <div class ="backButton">
     <a href="/">Back</a>
   </div>
-  {{> quickForm collection="Profiles" id="insertProfileForm" type="insert"}}
+  <div class="title">
+    Profile
+  </div>
+  {{#autoForm collection="Profiles" id="insertProfileForm" type="insert"}}
+    <fieldset>
+      {{> afQuickField name='operator'}}
+      {{> afQuickField name='Vessel'}}
+    </fieldset>
+    <button type="submit" class="btn btn-primary profileBtn">Submit</button>
+  {{/autoForm}}
 </template>

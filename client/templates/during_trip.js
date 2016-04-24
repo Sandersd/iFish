@@ -5,16 +5,7 @@ Template.during_trip.onCreated(function() {
 
 Template.during_trip.helpers({
   catches: function(){
-    var trip = Session.get('trip');
-    var hauls = [];
-    var i = 0;
-    _.forEach(Hauls.find().fetch, function(haul){
-      if(haul.trip == trip) {
-        hauls[i] = haul
-        i++;
-      }
-    });
-    return hauls;
+    return Hauls.find();
   },
 });
 

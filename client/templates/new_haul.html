@@ -2,8 +2,11 @@
   <div class ="backButton">
     <a href="/during_trip">Back</a>
   </div>
+  <div class="title">
+    New Haul
+  </div>
   {{#autoForm collection="Hauls" id="insertHaulForm" type="insert"}}
-    <fieldset>
+    <fieldset style="color: white; margin-top: 50px">
       {{> afQuickField name='species'}}
       {{> afQuickField name='weight'}}
       {{> afQuickField name='count'}}
@@ -13,8 +16,6 @@
       {{> afQuickField name='surfaceTemp'}}
       {{> afQuickField name='ticketType'}}
       {{> afQuickField name='ticketNumber'}}
-      {{> afQuickField name='Samples'}}
-      {{> afQuickField name='trip' value=trip}}
 
     </fieldset>
     <button type="submit" class="btn btn-primary haulSubmit">Submit</button>
