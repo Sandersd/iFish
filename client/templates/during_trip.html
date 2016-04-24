@@ -1,21 +1,26 @@
 <template name="during_trip">
-
-  <div class="row">
-    <a href="/new_haul" class="button">
-      <button>Add New Haul</button>
-    </a>
+<div class="wrapper">
+  <div class="title">
+    Trip in Progress
   </div>
+  <div style="padding: 3%">
+    <div class="row">
+      <a href="/new_haul">
+        <button class="button">Add New Haul</button>
+      </a>
+    </div>
 
-  <div class="row">
-    {{#each catches}}
-      {{trip}}
-    {{/each}}
+    <div class="row">
+      {{#each catches}}
+        {{trip}}
+      {{/each}}
+    </div>
+
+    <div class="row">
+      <a href="/after_trip">
+        <button id="stopTrip" class="button">Stop Trip</button>
+      </a>
+    </div>
   </div>
-
-  <div class="row">
-    <a href="/after_trip" class="button">
-      <button id="stopTrip">Stop Trip</button>
-    </a>
-  </div>
-
+</div>
 </template>
