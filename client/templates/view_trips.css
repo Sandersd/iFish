@@ -4,6 +4,10 @@ div {
   margin: 0px;
 }
 
+.trip-item{
+  color: #ffffff;
+}
+
 ul {
   list-style-type: none;
   width: 100%;
