@@ -1,5 +1,5 @@
 <template name="during_trip">
-  
+
   <div class="row">
     <a href="/new_haul">
       <button>Add New Haul</button>
@@ -7,14 +7,14 @@
   </div>
 
   <div class="row">
-    <a href="/view_trips">
-      <button>View Trip Hauls</button>
-    </a>
+    {{#each catches}}
+      {{trip}}
+    {{/each}}
   </div>
 
   <div class="row">
     <a href="/after_trip">
-      <button>Stop Trip</button>
+      <button id="stopTrip">Stop Trip</button>
     </a>
   </div>
 
