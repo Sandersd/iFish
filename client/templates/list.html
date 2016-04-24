@@ -1,10 +1,20 @@
 <template name='list'>
-  List
-  {{#each fishes}}
-    {{> fish}}
-  {{/each}}
+  List test
+  <div>
+  	<ul class="trip-list">
+	  {{#each fishes}}
+	    {{> fish}}
+	  {{/each}}
+  	</ul>
+  </div>
 </template>
 
-<template name='fish'>
-  {{species}}
+<template name="fish">
+    <li class="trip-item">
+      <a href="">
+        <img src="http://lorempixum.com/100/100/nature/1" >
+      </a>
+      <span class="trip-title">Trip Title</span>
+      <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+    </li>
 </template>
