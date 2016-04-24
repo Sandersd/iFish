@@ -1,3 +1,29 @@
 <template name="view_trips">
-  
+	LIST
+	<ul class="trip-list">
+		{{#each trips}}
+			{{> trip}}
+		{{/each}}
+	</ul>
+</template>
+
+<template name='trip'>
+    <li class="trip-item">
+      <a href="">
+        <img src="http://lorempixum.com/100/100/nature/1" >
+      </a>
+      <span class="trip-title">{{startDate}} - {{endDate}}</span>
+      <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+      	<ol>
+      		{{#each catches}}
+      			{{>catch}}
+      		{{/each}}
+      	</ol>
+    </li>
+</template>
+
+<template name='catch'>
+	<li>
+		{{weight this._id}}
+	</li>
 </template>
