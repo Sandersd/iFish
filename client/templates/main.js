@@ -2,8 +2,9 @@ Template.main.helpers({
 });
 
 Template.main.events({
-  "submit form": function(event, template){
-    event.preventDefault();
-    alert('submitted');
+  "click #startTrip": function(event, template){
+    Trips.insert({
+      location: 'here'
+    });
   }
 });
