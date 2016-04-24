@@ -1,4 +1,7 @@
 <template name="new_haul">
+  <div class ="backButton">
+    <a href="/during_trip">Back</a>
+  </div>
   {{#autoForm collection="Hauls" id="insertHaulForm" type="insert"}}
     <fieldset>
       {{> afQuickField name='species'}}

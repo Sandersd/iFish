@@ -1,4 +1,7 @@
 <template name="sold_fish">
+  <div class ="backButton">
+    <a href="/">Back</a>
+  </div>
   {{#each catches}}
     {{#autoForm collection="Trips" id="updateTripForm" type="update" doc=this}}
       <fieldset>
