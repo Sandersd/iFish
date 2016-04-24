@@ -6,6 +6,11 @@ div {
 
 .trip-item{
   color: #ffffff;
+  background-color: #353F4F;
+}
+
+.trip-item:active {
+  background-color: #353F4F;
 }
 
 ul {
