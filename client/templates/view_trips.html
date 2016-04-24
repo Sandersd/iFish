@@ -2,6 +2,11 @@
   <div class ="backButton">
     <a href="/">Back</a>
   </div>
+
+  <div class="title">
+    Past Trips
+  </div>
+
 	<ul class="trip-list">
 		{{#each trips}}
 			{{> trip}}
@@ -12,10 +17,10 @@
 <template name='trip'>
     <li class="trip-item">
       <a href="">
-        <img src="http://lorempixum.com/100/100/nature/1" >
+        <img src="fishing-boat.jpg" >
       </a>
       <span class="trip-title">{{startDate}} - {{endDate}}</span>
-      <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+      <p>Here are the details of my past trip.</p>
       	<ol>
       		{{#each catches}}
       			{{>catch}}
